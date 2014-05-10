@@ -87,3 +87,18 @@ sympy-plots-for-*.tex/
 
 # xindy
 *.xdy
+
+# ctex
+*.prj
+*.4ct
+*.4tc
+*.css
+*.html
+*.bak
+*.env
+*.tmp
+*.idv
+*.lg
+*.xref
+*.pdf
+/Images
