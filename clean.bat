@@ -7,5 +7,7 @@ del *.pdf
 del *.gz
 del *.bak
 del *.toc
+del *.ps
 
 del .\content\*.aux
+del .\content\*.bak
