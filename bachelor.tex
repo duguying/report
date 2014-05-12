@@ -2,21 +2,32 @@
 \usepackage{amsmath,amssymb}
 \usepackage{latexsym}
 \usepackage{CJK}
+\usepackage{listings,xcolor}
+
 \begin{document}
 \begin{CJK*}{GBK}{song}
 
 % 封面
-\include{"content/cover"}
+\include{content/cover}
 
 % 目录
 \newpage
 \tableofcontents
 
 % 示例章节 1
-\include{"content/description"}
+\include{content/description}
 
 % 示例章节 2
-\include{"content/math"}
+\include{content/math}
+
+% 示例章节 3
+\include{content/code}
+
+test \cite{name1}
+\renewcommand\refname{参考文献}
+\bibliographystyle{plain}
+\bibliography{reference}
+
 
 \end{CJK*}
 \end{document}
