@@ -11,3 +11,15 @@ del *.ps
 
 del .\content\*.aux
 del .\content\*.bak
+
+del *.4ct
+del *.4tc
+del *.css
+del *.html
+del *.idv
+del *.lg
+del *.tmp
+del *.xref
+del *.env
+
+RD /S /Q .\Images
