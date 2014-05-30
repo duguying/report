@@ -21,5 +21,6 @@ del *.lg
 del *.tmp
 del *.xref
 del *.env
+del *.out
 
 RD /S /Q .\Images

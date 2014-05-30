@@ -5,6 +5,17 @@
 \usepackage{listings,xcolor}
 \usepackage{graphicx}
 \usepackage{titlesec}
+\usepackage[dvipdfm,
+            pdfstartview=FitH,
+            CJKbookmarks=true,
+            bookmarksnumbered=true,
+            bookmarksopen=true,
+            colorlinks=true, %注释掉此项则交叉引用为彩色边框(将colorlinks和pdfborder同时注释掉)
+            %pdfborder=001,   %注释掉此项则交叉引用为彩色边框
+            citecolor=magenta,% magenta , cyan
+            linkcolor=blue,
+            linktocpage=true,
+            ]{hyperref}       % hyperref 宏包通常要求放在导言区的最后!!!
 
 % 章节标题大号加粗居中
 \titleformat*{\section}{\centering\large\bfseries}
