@@ -16,9 +16,13 @@
             linkcolor=blue,
             linktocpage=true,
             ]{hyperref}       % hyperref 宏包通常要求放在导言区的最后!!!
+\usepackage{titletoc}
 
 % 章节标题大号加粗居中
 \titleformat*{\section}{\centering\large\bfseries}
+
+% 目录点线
+\dottedcontents{section}[1.18cm]{\large}{2.0em}{4pt}
 
 \begin{document}
 \begin{CJK*}{GBK}{song}
@@ -29,6 +33,7 @@
 % 目录
 \newpage
 \renewcommand{\contentsname}{\centerline{目录}}
+
 \tableofcontents
 
 % 示例章节 1
