@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[adobefonts]{ctexart}
 \usepackage{amsmath,amssymb}
 \usepackage{latexsym}
 \usepackage{CJK}
@@ -17,6 +17,9 @@
             linktocpage=true,
             ]{hyperref}       % hyperref 宏包通常要求放在导言区的最后!!!
 \usepackage{titletoc}
+
+
+\pagestyle{plain}
 
 % 章节标题大号加粗居中
 \titleformat*{\section}{\centering\large\bfseries}
@@ -37,7 +40,7 @@
 \tableofcontents
 
 % 示例章节 1
-\include{content/description}
+\include{content/cap_target}
 
 % 示例章节 2
 \include{content/math}
