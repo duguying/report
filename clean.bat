@@ -11,6 +11,7 @@ del *.ps
 
 del .\content\*.aux
 del .\content\*.bak
+del .\content\*.log
 
 del *.4ct
 del *.4tc
@@ -22,5 +23,6 @@ del *.tmp
 del *.xref
 del *.env
 del *.out
+del *.log
 
 RD /S /Q .\Images

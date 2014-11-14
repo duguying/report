@@ -1,55 +1,59 @@
-\documentclass{article}
+\documentclass{ctexartutf8}
 \usepackage{amsmath,amssymb}
 \usepackage{latexsym}
-\usepackage{CJK}
+\usepackage{CJKutf8}
 \usepackage{listings,xcolor}
 \usepackage{graphicx}
 \usepackage{titlesec}
-\usepackage[dvipdfm,
+
+\usepackage[unicode,dvipdfm,
             pdfstartview=FitH,
-            CJKbookmarks=true,
+            % CJKbookmarks=true,
             bookmarksnumbered=true,
             bookmarksopen=true,
-            colorlinks=true, %×¢ÊÍµô´ËÏîÔò½»²æÒıÓÃÎª²ÊÉ«±ß¿ò(½«colorlinksºÍpdfborderÍ¬Ê±×¢ÊÍµô)
-            %pdfborder=001,   %×¢ÊÍµô´ËÏîÔò½»²æÒıÓÃÎª²ÊÉ«±ß¿ò
+            colorlinks=true, %æ³¨é‡Šæ‰æ­¤é¡¹åˆ™äº¤å‰å¼•ç”¨ä¸ºå½©è‰²è¾¹æ¡†(å°†colorlinkså’ŒpdfborderåŒæ—¶æ³¨é‡Šæ‰)
+            %pdfborder=001,   %æ³¨é‡Šæ‰æ­¤é¡¹åˆ™äº¤å‰å¼•ç”¨ä¸ºå½©è‰²è¾¹æ¡†
             citecolor=magenta,% magenta , cyan
             linkcolor=blue,
             linktocpage=true,
-            ]{hyperref}       % hyperref ºê°üÍ¨³£ÒªÇó·ÅÔÚµ¼ÑÔÇøµÄ×îºó!!!
+            ]{hyperref}       % hyperref å®åŒ…é€šå¸¸è¦æ±‚æ”¾åœ¨å¯¼è¨€åŒºçš„æœ€å!!!
 \usepackage{titletoc}
 
-% ÕÂ½Ú±êÌâ´óºÅ¼Ó´Ö¾ÓÖĞ
+
+\pagestyle{plain}
+
+% ç« èŠ‚æ ‡é¢˜å¤§å·åŠ ç²—å±…ä¸­
 \titleformat*{\section}{\centering\large\bfseries}
 
-% Ä¿Â¼µãÏß
+% ç›®å½•ç‚¹çº¿
 \dottedcontents{section}[1.18cm]{\large}{2.0em}{4pt}
 
 \begin{document}
-\begin{CJK*}{GBK}{song}
+\begin{CJK*}{UTF8}{song}
 
-% ·âÃæ
+% å°é¢
 \include{content/cover}
 
-% Ä¿Â¼
+% ç›®å½•
 \newpage
-\renewcommand{\contentsname}{\centerline{Ä¿Â¼}}
+\renewcommand{\contentsname}{\centerline{ç›®å½•}}
 
 \tableofcontents
 
-% Ê¾ÀıÕÂ½Ú 1
-\include{content/description}
+% ç¤ºä¾‹ç« èŠ‚ 1
+\include{content/cap_target}
 
-% Ê¾ÀıÕÂ½Ú 2
+% ç¤ºä¾‹ç« èŠ‚ 2
 \include{content/math}
 
-% Ê¾ÀıÕÂ½Ú 3
+% ç¤ºä¾‹ç« èŠ‚ 3
 \include{content/code}
 
 
 
-% ²Î¿¼ÎÄÏ×
+% å‚è€ƒæ–‡çŒ®
 \newpage
-\renewcommand\refname{\centerline{²Î¿¼ÎÄÏ×}}
+\renewcommand\refname{\centerline{å‚è€ƒæ–‡çŒ®}}
 \bibliographystyle{plain}
 \bibliography{reference}
 
